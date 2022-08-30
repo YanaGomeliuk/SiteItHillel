@@ -463,7 +463,9 @@ p {
     position: fixed;
     max-width: 300px;
     width: 100%;
+    left: 0;
     top: 50%;
+    margin-top: -64px;
     outline: 2px solid rgb(166, 142, 191);
 }
 .block{
