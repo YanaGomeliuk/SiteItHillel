@@ -440,24 +440,36 @@ p {
 
 .father_block {
     text-align: center;
+    height: 400px;
+    display: block;
 }
 .img_block{
     display: inline-block;
     position: relative;
-}
-.name_img{
-    width: 100%;
-    height: 20px;
-    background: pink;
-    position: absolute;
-    top: 50%;
-    margin-top: -10px;
+    height: 400px;
 }
 
-.father_fixed{
+.name_img {
+    max-width: 300px;
+    width: 100%;
+    height: 40px;
     position: relative;
-  
+    background: pink;
+    margin-top: -20px;
+    bottom: 50%;
+    font-size: 30px;
 }
+
+.photo{
+    position: relative;
+    z-index: 10;
+}
+    
+.img_block:hover .name_img{
+    position: absolute;
+    z-index: 20;
+}
+
 .fixed{
     background: rgb(203, 194, 205);
     position: fixed;
@@ -471,3 +483,4 @@ p {
 .block{
     outline: 2px solid rgb(166, 142, 191);;
 }
+
