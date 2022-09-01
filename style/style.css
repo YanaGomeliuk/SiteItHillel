@@ -484,3 +484,86 @@ p {
     outline: 2px solid rgb(166, 142, 191);;
 }
 
+ul { 
+    text-align: center;
+    font-size: 0;
+    position: relative;
+    z-index: 25;
+    height: 50px;
+    width: 1200px;
+}
+
+ul li {
+    display: inline-block; 
+    font-size: 20px; 
+    text-align: center;
+    width: 200px; 
+    background: purple; 
+    position: relative; 
+}
+
+ul li ul {
+    margin: 0px;
+    width: 200px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+ul li+li {
+    border-left: 2px solid plum; 
+}
+
+ul ul li {
+    border-left: 0;
+    border-bottom: 2px solid plum;
+}
+
+ul li ul li {
+    float: none;
+    margin: 0;
+    width: 200px;
+    text-align: center;
+    background: purple;
+}
+ul li a {
+    display: block; 
+    color: black; 
+    text-decoration: none; 
+    font-weight: 600; 
+    padding: 10px 80px; 
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li:hover {
+    background: rgb(182, 124, 124);
+}
+
+ul li ul li ul{
+    left: -100%;
+    top: 0;
+}
+
+ul li ul li ul li {
+    display: none;
+}
+
+ul li ul li:hover ul li {
+    display: block;
+}
+ul ul{
+    padding: 10px 0;
+}
+ul ul ul{
+    padding: 0 15px 0 0;
+   }
+
+.menu_grid{
+    left: 100%;
+    top: 0;
+}
+    
