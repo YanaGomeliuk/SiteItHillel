@@ -484,7 +484,7 @@ p {
     outline: 2px solid rgb(166, 142, 191);;
 }
 
-ul { 
+.mainmenu { 
     text-align: center;
     font-size: 0;
     position: relative;
@@ -493,7 +493,7 @@ ul {
     width: 1200px;
 }
 
-ul li {
+.mainmenu li {
     display: inline-block; 
     font-size: 20px; 
     text-align: center;
@@ -502,7 +502,7 @@ ul li {
     position: relative; 
 }
 
-ul li ul {
+.mainmenu li ul {
     margin: 0px;
     width: 200px;
     display: none;
@@ -511,23 +511,23 @@ ul li ul {
     top: 100%;
 }
 
-ul li+li {
+.mainmenu li+li {
     border-left: 2px solid plum; 
 }
 
-ul ul li {
+.mainmenu ul li {
     border-left: 0;
     border-bottom: 2px solid plum;
 }
 
-ul li ul li {
+.mainmenu li ul li {
     float: none;
     margin: 0;
     width: 200px;
     text-align: center;
     background: purple;
 }
-ul li a {
+.mainmenu li a {
     display: block; 
     color: black; 
     text-decoration: none; 
@@ -535,35 +535,58 @@ ul li a {
     padding: 10px 80px; 
 }
 
-ul li:hover ul {
+.mainmenu li:hover ul {
     display: block;
 }
 
-ul li:hover {
+.mainmenu li:hover {
     background: rgb(182, 124, 124);
 }
 
-ul li ul li ul{
+.mainmenu li ul li ul{
     left: -100%;
     top: 0;
 }
 
-ul li ul li ul li {
+.mainmenu li ul li ul li {
     display: none;
 }
 
-ul li ul li:hover ul li {
+.mainmenu li ul li:hover ul li {
     display: block;
 }
-ul ul{
+.mainmenu ul{
     padding: 10px 0;
 }
-ul ul ul{
+.mainmenu ul ul{
     padding: 0 15px 0 0;
    }
 
-.menu_grid{
+#menu_grid{
     left: 100%;
     top: 0;
 }
     
+.contact {
+    font-size: 0;
+    text-align: left;
+
+}
+.contact li{
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 10px;
+}
+.contact li a{
+    width: 50px;
+    height: 50px;
+    background: url('../images/css_sprites.png');
+    display: block;
+}
+
+.contact li+li a {
+    background-position: -100px 0;}
+
+.contact li+li+li a {
+    background-position: -50px 0;
+}
