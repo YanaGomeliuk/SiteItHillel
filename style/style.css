@@ -483,90 +483,7 @@ p {
 .block{
     outline: 2px solid rgb(166, 142, 191);;
 }
-
-.mainmenu { 
-    text-align: center;
-    font-size: 0;
-    position: relative;
-    z-index: 25;
-    height: 50px;
-    width: 1200px;
-}
-
-.mainmenu li {
-    display: inline-block; 
-    font-size: 20px; 
-    text-align: center;
-    width: 200px; 
-    background: purple; 
-    position: relative; 
-}
-
-.mainmenu li ul {
-    margin: 0px;
-    width: 200px;
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
-}
-
-.mainmenu li+li {
-    border-left: 2px solid plum; 
-}
-
-.mainmenu ul li {
-    border-left: 0;
-    border-bottom: 2px solid plum;
-}
-
-.mainmenu li ul li {
-    float: none;
-    margin: 0;
-    width: 200px;
-    text-align: center;
-    background: purple;
-}
-.mainmenu li a {
-    display: block; 
-    color: black; 
-    text-decoration: none; 
-    font-weight: 600; 
-    padding: 10px 80px; 
-}
-
-.mainmenu li:hover ul {
-    display: block;
-}
-
-.mainmenu li:hover {
-    background: rgb(182, 124, 124);
-}
-
-.mainmenu li ul li ul{
-    left: -100%;
-    top: 0;
-}
-
-.mainmenu li ul li ul li {
-    display: none;
-}
-
-.mainmenu li ul li:hover ul li {
-    display: block;
-}
-.mainmenu ul{
-    padding: 10px 0;
-}
-.mainmenu ul ul{
-    padding: 0 15px 0 0;
-   }
-
-#menu_grid{
-    left: 100%;
-    top: 0;
-}
-    
+  
 .contact {
     font-size: 0;
     text-align: left;
@@ -585,8 +502,145 @@ p {
 }
 
 .contact li+li a {
-    background-position: -100px 0;}
+    background-position: 0 -50px;}
 
 .contact li+li+li a {
     background-position: -50px 0;
+}
+
+.mainmenu {
+    text-align: center;
+    font-size: 0;
+    position: relative;
+    z-index: 25;
+    height: 50px;
+}
+
+.mainmenu li {
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    background: rgb(225, 195, 225);
+    position: relative;
+    min-width: 150px;
+    min-height: 35px;
+}
+
+.mainmenu li ul {
+    margin: 0px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.mainmenu li+li {
+    border-left: 2px solid rgb(185, 159, 185);
+}
+
+.mainmenu ul li {
+    border-left: 0;
+    border-bottom: 2px solid rgb(185, 159, 185);
+}
+
+.mainmenu li ul li {
+    float: none;
+    margin: 0;
+    text-align: center;
+    background: rgb(225, 195, 225);
+}
+
+.mainmenu li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.mainmenu li:hover ul {
+    display: block;
+}
+
+.mainmenu li:hover {
+    background: rgb(182, 124, 124);
+}
+
+.mainmenu li ul li ul {
+    left: -100%;
+    top: -100%;
+}
+
+.mainmenu li ul li ul li {
+    display: none;
+}
+
+.mainmenu li ul li:hover ul li {
+    display: block;
+}
+
+.mainmenu ul {
+    padding: 10px 0;
+}
+.mainmenu ul ul {
+    padding: 0 15px 0 0;
+}
+
+#menu_grid {
+    left: 100%;
+    top: 0;
+}
+.home_a,
+.block_a,
+.photo_a,
+.float_a,
+.grid_a{
+    padding: 10px 20px 5px 30px;
+    position: relative;
+}
+
+.home_a:before,
+.block_a:before,
+.photo_a:before,
+.float_a:before,
+.grid_a:before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url(../images/css_sprites.png);
+    position: absolute; 
+}
+.home_a:before{
+    background-position: -50px -50px;
+    left: 0;
+    top: 0;
+}
+
+.block_a:before{
+    background-position: -100px -30px;
+    right: 0;
+    top: 0;
+}
+.photo_a:before{
+    background-position: 0 -100px;
+    left: 0;
+    top: 0;
+}
+.float_a:before{
+    background-position: -100px -60px;
+    left: 0;
+    top: 0;
+}
+.grid_a:before{
+    background-position: -30px -100px;
+    right: 0;
+    top: 0;
+}
+.block_h:hover .block_a:before{
+    background-position: -100px 0;
+}
+.float_h:hover .float_a:before{
+    background-position: -30px -100px;
+}
+.grid_h:hover .grid_a:before{
+    background-position: -100px -60px;
 }
