@@ -618,9 +618,9 @@ p {
 .float_h:hover .in_float_h {
     visibility: visible;
     height: calc(200% + 2px);
-    transition: height 2s ease;
+    transition: height 2s steps(5, end);
     padding: 0 10px;
-    transition: padding 2s ease;
+    transition: padding 2s steps(5, end);
 }
 
 .mainmenu li+li {
