@@ -991,3 +991,166 @@ background-position: -90px -90px;
     left: 49%;
 }
 
+/*формы*/
+.main_form{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+    background: #dfe5c2;
+    height: 500px;
+}
+.placeholder {
+    display: block;
+    position: relative;
+    margin-left: 20px;
+}
+
+.placeholder input {
+    display: block;
+    width: 200px;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+.placeholder-text {
+    display: none;
+    line-height: 37px;
+    position: absolute;
+    bottom: 0;
+}
+
+.placeholder input:invalid+.placeholder-text {
+    display: block;
+}
+.placeholder-text span{
+    color: red;
+    margin-left: 100px;
+}
+.main_form div{
+
+    margin-left: 20px;
+}
+.fruts,
+.number{
+    margin-top: 50px;
+    position: relative;
+}
+select{
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    z-index: 10;
+    position: relative;
+    /*в гитхабе предлагают*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+select::-ms-expand {
+    display: none;
+}
+.fruts::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    border-top: 5px solid red;
+    border-radius: 50%;
+    background: yellow;
+    left: 127px;
+    top: 5px;
+    z-index: 5;
+}
+.number input{
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    z-index: 10;
+    font-size: 35px;
+    position: relative;
+    padding-left: 5px;
+    border-radius: 5px;
+    }
+.number::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid yellow;
+    border-top: 20px solid green;
+    z-index: 5;
+    left: 169px;
+    top: 3px;
+}
+.number::after {
+    content: "";
+    position: absolute;
+    width: 211px;
+    height: 46px;
+    background: blanchedalmond;
+    left: -1px;
+    border-radius: 5px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(234, 190, 190);
+    transition: .4s;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.round {
+    border-radius: 34px;
+}
+
+.round:before {
+    border-radius: 50%;
+}
+.text{
+    position: absolute;
+    left: -100%;
+    top: 25%;
+}
+    
