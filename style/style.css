@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@font-face {
+    font-family: 'bitter';
+    src: url('../font/fontsquirrel/bitterpro-light-webfont.eot');
+    src: url('../font/fontsquirrel/bitterpro-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/fontsquirrel/bitterpro-light-webfont.woff2') format('woff2'),
+        url('../font/fontsquirrel/bitterpro-light-webfont.woff') format('woff'),
+        url('../font/fontsquirrel/bitterpro-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Volja';
+    src: url('../font/volja/Volja-Regular.eot');
+    src: url('../font/volja/Volja-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/volja/Volja-Regular.woff2') format('woff2'),
+        url('../font/volja/Volja-Regular.woff') format('woff'),
+        url('../font/volja/Volja-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 html,
 body,
 div,
@@ -1153,4 +1175,19 @@ input:checked+.slider:before {
     left: -100%;
     top: 25%;
 }
-    
+
+.home_a,
+.photo_a,
+.block_a{
+    font-family: 'Lobster', cursive;
+}
+
+.in_block_font,
+.float_a,
+.grid_a{
+    font-family: 'bitter';
+}
+.in_float_h,
+.grid_h ul{
+    font-family: 'Volja';
+}
