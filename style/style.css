@@ -1098,9 +1098,11 @@ select::-ms-expand {
     padding-left: 5px;
     border-radius: 5px;
     }
+
 .number::before{
     content: "";
     position: absolute;
+    cursor: pointer;
     width: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
@@ -1113,12 +1115,15 @@ select::-ms-expand {
 .number::after {
     content: "";
     position: absolute;
+    cursor: pointer;
     width: 211px;
     height: 46px;
     background: blanchedalmond;
     left: -1px;
     border-radius: 5px;
 }
+
+
 
 .switch {
     position: relative;
@@ -1161,6 +1166,9 @@ input:checked+.slider {
 
 input:checked+.slider:before {
     transform: translateX(26px);
+}
+label{
+    cursor: pointer;
 }
 
 .round {
